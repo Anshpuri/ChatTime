@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "269791055949",
+    "firebase_url": "https://chattime-58956.firebaseio.com",
+    "project_id": "chattime-58956",
+    "storage_bucket": "chattime-58956.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269791055949:android:868fbfc627af8c2c",
+        "android_client_info": {
+          "package_name": "com.example.anshpuri.chattime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269791055949-mr8e1p6ar49cegp37r1nhcj2mhtg2t3r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anshpuri.chattime",
+            "certificate_hash": "654602acc4c245ab64331921a7c544aa376de6f5"
+          }
+        },
+        {
+          "client_id": "269791055949-osv6vfi0qdistd8q243foc72vqp5e0rr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5H4UiNtCJPD0Wi9dg-yb9qkg8S_Ei9CQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269791055949-osv6vfi0qdistd8q243foc72vqp5e0rr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
