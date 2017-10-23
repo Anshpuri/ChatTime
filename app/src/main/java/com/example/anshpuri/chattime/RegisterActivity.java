@@ -99,11 +99,12 @@ public class RegisterActivity extends AppCompatActivity {
                             String uid = currentuser.getUid();
 
                             Database = FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
+                            String device_token = FirebaseInstanceId.getInstance().getToken();
                             HashMap<String , String> users = new HashMap<String, String>();
                             users.put("name" , display_name);
                             users.put("status" , "Hi there !");
                             users.put("image" , "default");
-                            users.put("device_token" , FirebaseInstanceId.getInstance().getToken());
+                            users.put("device_token" ,device_token);
                             users.put("thumb_image" , "default");
                             Database.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

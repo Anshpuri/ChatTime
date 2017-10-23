@@ -62,6 +62,8 @@ public class ProfileActivity extends AppCompatActivity {
         profile_totalfriends = (TextView) findViewById(R.id.profile_totalfriends);
 
         current_state = "not_friends";
+        decline_btn.setVisibility(View.INVISIBLE);
+        decline_btn.setEnabled(false);
 
 
         friendrequestdatabase = FirebaseDatabase.getInstance().getReference().child("Friend_req");
@@ -74,6 +76,7 @@ public class ProfileActivity extends AppCompatActivity {
         progressDialog.setTitle("Loading User Data");
         progressDialog.setMessage("Please wait while we load the user data");
         progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.show();
 
 
 
@@ -104,6 +107,7 @@ public class ProfileActivity extends AppCompatActivity {
                                 current_state= "req_received";
                             send_request.setText("Accept Friend Request");
 
+                                decline_btn.setVisibility(View.VISIBLE);
                                 decline_btn.setEnabled(true);
 
 
@@ -120,6 +124,7 @@ public class ProfileActivity extends AppCompatActivity {
                             }
 
 
+                            progressDialog.dismiss();
                         }
                         else
                         {
